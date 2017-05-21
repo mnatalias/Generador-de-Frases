@@ -1,0 +1,59 @@
+@import "https://fonts.googleapis.com/css?family=Playfair+Display|Raleway:400,900";
+@import "variables";
+
+body {
+    background-color: $bgColor;
+    text-align: center;
+}
+
+h1 {
+    font-family: $titleFont;
+    color: $titleColor;
+    font-size: 28px;
+    font-weight: 900;
+    margin: 20px 0;
+}
+
+.box {
+    background-color: $boxColor;
+    padding: 30px;
+    line-height: 40px;
+    p {
+        font-family: $textFont;
+        color: $quoteColor;
+        font-size: 20px;
+    }
+    footer {
+        color: $footerColor;
+        font-size: 16px;
+    }
+}
+
+.botones {
+    .col-2 {
+        background-color: $quoteColor;
+        &:hover {
+            background-color: $buttonColor;
+        }
+     }
+    .col-boton {
+        padding: 0;
+        .btn {
+            background-color: $buttonColor;
+            border: 0px;
+            border-radius: 0;
+            color: $quoteColor;
+            font-size: 27px;
+            font-family: $titleFont;
+            &:hover {
+                background-color: $hoverColor;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+        .logo {
+            width: 50px;
+        }
+    }
+}
